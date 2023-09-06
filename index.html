@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="title text-white text-center my-3">
+            <h1>CRUDS</h1>
+            <P>CREATE READ UPDATE SEARCH</P>
+        </div>
+        <input type="text" class="w-100" id="title" placeholder="title"  autocomplete="off">
+        <div class="inpur-group">
+            <input onkeyup="getTotal()" type="number" id="price" placeholder="price" autocomplete="off">
+            <input onkeyup="getTotal()" type="number" id="taxes" placeholder="taxes" autocomplete="off">
+            <input onkeyup="getTotal()" type="number" id="ads" placeholder="ads">
+            <input onkeyup="getTotal()" type="number" id="discount" placeholder="discount" autocomplete="off">
+            <span class="bg-success p-1 rounded">Total : <span id="total"> </span></span>
+            
+        </div>
+        <input type="text" class="w-100" id="count" placeholder="count" autocomplete="off">
+        <input type="text" class="w-100" id="category" placeholder="category" autocomplete="off">
+        <button class="btn btn-success w-100" id="create">Create</button>
+        <button class="btn btn-success w-100" id="update">Update</button>
+        <input type="text" class="w-100" id="search" placeholder="search" autocomplete="off">
+        <div class="btns-searchBy d-flex " id="searchBtns">
+            <button class="btn btn-success " id="searchByTitle">Search by title</button>
+            <button class="btn btn-success " id="searchByCategory">Search by category</button>
+            <span id="searchMode"></span>
+        </div>
+        <button class="btn btn-danger w-100 my-3" onclick="deleteAllProducts()" id="deleteAll">Delete All</button>
+
+            <table class="w-100" >
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Price</th>
+                        <th>Taxes</th>
+                        <th>Ads</th>
+                        <th>Discount</th>
+                        <th>Total</th>
+                        <th>Category</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="container">
+                  
+                    
+                </tbody>
+            </table>
+        
+        
+
+    </div>
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

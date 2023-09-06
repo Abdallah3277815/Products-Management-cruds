@@ -1,0 +1,31 @@
+body{
+    background-color: #1c1c1c;
+    color:#fff;
+}
+input{
+    background-color: #5c5c5c;
+    color: #fff;
+    padding: 6px;
+    border-radius: 5px;
+    margin: 10px 0;
+    border:none
+}
+input:focus{
+    outline: 2px solid #09c;
+}
+input::placeholder{
+    color: #fff;
+}
+.btns-searchBy{
+    display: flex;
+    justify-content: space-between;
+}
+.btns-searchBy button{
+    width: 48%;
+    
+}
+table{
+    /* background-color: #1c1c1c !important; */
+}
+
+
